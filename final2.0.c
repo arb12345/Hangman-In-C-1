@@ -10,7 +10,7 @@ int check(char string1,char string2[],int l ,char z[])
     int ki=sizeof(z);
     while(ip<l)
     {
-        if(string1==string2[ip])
+        if(string1==string2[ip]||(string2[ip]+32)==string1||(string1+32)==(string2[ip]))
         {
             j++;
             z[ip]=string2[ip];
